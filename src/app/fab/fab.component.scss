@@ -1,0 +1,35 @@
+.fab-container {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  
+    > div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 5px;
+  
+        a {
+            margin-bottom: 17px;
+        }
+    }
+}
+.fab-toggler {
+    float: right;
+    z-index: 100;
+}
+a:hover { 
+    color: #fff;
+}
+.fab {
+    font-size: 30px;
+    line-height: 0;
+    margin-top: -5px;
+}
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+    background-color: 	#4FCE5D;
+}

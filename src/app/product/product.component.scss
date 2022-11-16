@@ -1,0 +1,22 @@
+
+@media(min-width: 770px) {
+    .show{
+        display: block;
+    }
+    .unshow{
+        display: none;
+    }
+ 
+}
+@media(max-width: 775px) {
+    .unshow{
+        display: block;
+    }
+    .show{
+        display: none;
+    }
+    .tcenter {
+        text-align: center !important;
+    }
+   
+}

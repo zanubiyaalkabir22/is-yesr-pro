@@ -1,0 +1,110 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~swiper/swiper-bundle';
+.arabic {
+    font-family: 'Tajawal', sans-serif !important;
+  }
+.turkish { 
+    font-family: "Lucida Grande","LucidaGrande",Arial,sans-serif;
+}
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.lemonada {
+    font-family: 'Poppins', sans-serif;
+}
+.central-ul {
+    list-style: none;
+  
+    padding: 0;
+}
+.animated {
+    -webkit-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+    -webkit-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px !important;
+    background-color: rgb(41, 41, 41) !important;
+}
+
+// z-index: 10000;
+// position: fixed;
+// top: 0px;
+// width: 100%;
+
+avbar-dark .nav-item.active>.nav-link, .navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
+    color: gold !important;
+    border-bottom: 1px solid gold !important;
+    background-color: transparent !important;
+    border-radius: 3px !important;
+}
+
+.navbar.navbar-light .nav-item.active>.nav-link, .navbar.navbar-light .navbar-nav .nav-item.active>.nav-link {
+    color: gold !important;
+    border-bottom: 1px solid gold !important;
+    background-color: transparent !important;
+    border-radius: 3px !important;
+}
+.navbar.navbar-dark .nav-item.active>.nav-link, .navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
+    color: gold !important;
+    border-bottom: 1px solid gold !important;
+    background-color: transparent !important;
+    border-radius: 3px !important;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.rgba-blue-strong, .rgba-blue-strong:after {
+    background-color: gold;
+}
+
+.bold-line{
+    border: 0;
+    border-top: 1.5px solid rgba(0, 0, 0, 0.829);
+    width: 75%;
+}
+@media (max-width: 992px) {
+    .navbar .nav-item .nav-link {
+        padding-right: 0px !important;
+        padding-left: 0px ;
+    }
+}
+@media (max-width: 767px) { 
+    .dropdown.custom:hover .dropdown-menu {
+      visibility: visible;
+      display:block;
+      border-radius:0;
+      background-color: rgb(41, 41, 41);
+      
+    }
+}
+
+.bold-line{
+    border: 0;
+    border-top: 1.5px solid rgb(238, 202, 0);
+    width: 75%;
+}
+
+.bold-line2{
+    border: 0;
+    border-top: 4px solid rgb(238, 202, 0);
+    width: 75%;
+}
+
+.inset {
+    font: bold arial, sans-serif;
+    background-color: #000000;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+  }

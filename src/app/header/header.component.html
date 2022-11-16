@@ -1,0 +1,69 @@
+<div class="show">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light white lighten-5 top-bar fixed" [containerInside]="false">
+  <a class="navbar-brand" style="margin-right: 4%; margin-left: 3%;margin-top: 8px;color: #fff;">
+    <img src="assets/logo2.png" height="60" alt="mdb logo">
+    <span class="ml-2" style="font-size:24px; font-style: italic;font-weight: 900; ">AKKAD. </span> <span style="font-size: 14px;">WATCHES</span>
+  </a>
+
+  <links dir="rtl">
+    <ul>
+      <li>
+        <img class="mt-2" src="assets/shop.png" height="45" alt="mdb logo">
+      </li>
+    </ul>
+    <ul class="navbar-nav" style="margin-right: 10%;" dir="ltr" >
+      <li class="nav-item " routerLinkActive="active">
+        <a class="nav-link waves-light poppins"  routerLink="/home" style="color: #fff;" mdbWavesEffect><i class="fas fa-home"></i> Home  </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link waves-light poppins"  routerLink="/contact" style="color: #fff;" mdbWavesEffect><i class="fas fa-headphones-alt"></i> Contact</a>
+      </li>  
+
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link waves-light poppins"  routerLink="/watches" style="color: #fff;" mdbWavesEffect><i class="far fa-clock"> watches</i> </a>
+    </li>  
+      <!-- <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light poppins" style="color: #fff;"
+            mdbWavesEffect>
+            <i class="fas fa-shopping-bag"></i> Categories<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary poppins"
+            role="menu">
+            <a class="dropdown-item waves-light" style="color: #fff;" mdbWavesEffect routerLink="/watches"> Watches </a>
+            <a class="dropdown-item waves-light" style="color: #fff;" mdbWavesEffect routerLink="/machins"> Movements </a>
+            <a class="dropdown-item waves-light" style="color: #fff;" mdbWavesEffect routerLink="/pattaries"> Batteries  </a>
+            <a class="dropdown-item waves-light" style="color: #fff;" mdbWavesEffect routerLink="/accessories"> Accessories </a>
+        </div>
+    </li> -->
+    </ul>
+
+  </links>
+</mdb-navbar>
+</div>
+
+
+<div class="unshow">
+  <nav class="navbar navbar-dark ">
+    <a style="margin-top: 8px;margin-left: 8px;" >
+      <img src="assets/logo2.png" height="45" alt="mdb logo">
+    </a>
+        <ul class="menu-items socialMedia">
+            <li class="nav-item"  routerLinkActive="active">
+              <a class="nav-link waves-light poppins" style="color: #fff;"  routerLink="/home"  mdbWavesEffect><i class="fas fa-home"></i> Home </a>
+  
+            </li>
+            <li class="nav-item"  routerLinkActive="active">
+              <a class="nav-link waves-light poppins"  style="color: #fff;" routerLink="/contact"  mdbWavesEffect><i class="fas fa-headphones-alt"></i> Contact</a>
+  
+            </li>
+            <li class="dropdown custom open"> 
+              <a dropdownToggle  type="button" class="nav-link dropdown-toggle waves-light text-center" mdbWavesEffect data-toggle="dropdown" style="color: #fff;"><i class="fas fa-shopping-bag"></i> Categories<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li routerLinkActive="active">  <a class="dropdown-item waves-light" style="color: #fff;" mdbWavesEffect routerLink="/watches"> Watches </a></li>
+                  <li routerLinkActive="active">  <a class="dropdown-item waves-light" style="color: #fff;" mdbWavesEffect routerLink="/pattaries"> Batteries  </a></li>
+                  <li routerLinkActive="active"> <a class="dropdown-item waves-light" style="color: #fff;" mdbWavesEffect routerLink="/machins"> Movements </a></li>
+                  <li routerLinkActive="active"><a class="dropdown-item waves-light" style="color: #fff;" mdbWavesEffect routerLink="/accessories"> Accessories </a></li>
+               </ul>
+            </li>
+        </ul>
+  </nav>
+</div>

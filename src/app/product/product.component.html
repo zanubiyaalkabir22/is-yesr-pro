@@ -1,0 +1,30 @@
+<div class="container poppins margin" style="margin-top: 2%;margin-bottom: 10%;">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="h1-responsive inset" style="letter-spacing: 5px;text-align: center;">
+                {{productInfo.name | uppercase}}
+            </h1>
+            <div class="col-md-2 bold-line2 center mt-4"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9 col-12 center">
+            <div class="row">
+                <div class="col-md-5 col-8 center">
+                    <img class="center" src="{{productInfo.image}}" width="90%" alt="">
+                </div>
+                <div class="col-md-7" >
+                    <h3 class="h3-responsive mt-5 tcenter">
+                      <span style="text-decoration: line-through;color: red;margin-right: 5px;"> {{productInfo.price * 1.2 | number}} $ </span>   {{productInfo.price}} $
+                    </h3>
+                    <p class="poppins mb-5 tcenter" style="margin-top: 10%;">
+                        {{productInfo.des}}
+                    </p>
+                 
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+

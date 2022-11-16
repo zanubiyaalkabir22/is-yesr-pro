@@ -1,0 +1,22 @@
+<div class="container poppins margin" style="margin-top: 2%;margin-bottom: 10%;">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="h1-responsive inset" style="letter-spacing: 5px;text-align: center;">
+                BATTERIES GALLERY 
+            </h1>
+            <div class="col-md-2 bold-line2 center mt-4"></div>
+        </div>
+    </div>
+    <div class="row mt-2 text-center">
+        <div class="col-md-3 col-8 center mt-5" *ngFor="let item of items" >
+            <a [routerLink]="['/watch', item._id]" style="font-size: 24px;color: rgb(182, 181, 181);">
+                <div class="card" style="background-color: rgb(241, 241, 241);">
+                    <img class="center mb-4" src="{{item.image}}" width="100%" alt="">
+                </div>
+                <div class="mt-3 ">
+                    {{item.name | uppercase}} <br> $ {{item.price}}
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,148 @@
+<div class="container mt-4">
+    <div class="col-md-8">
+        <nav aria-label="breadcrumb" style="background-color: #fff;">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="poppins" routerLink="/"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="breadcrumb-item active poppins" aria-current="page"><i class="fas fa-headset"></i>
+                    Contact
+                </li>
+            </ol>
+        </nav>
+    </div>
+    <div class="card card-body" style="background-color: #fff;">
+        <div class="row">
+            <div class="col-md-5">
+                <h3 class="h3-responsive poppins">
+                    Opening Hours
+                </h3>
+                <ul class="ltx-hours mt-2">
+                    <li>
+                        <strong> Monday: </strong>
+                        <strong>09:00 – 17:30</strong>
+                    </li>
+                    <li>
+                        <strong> Tuesday: </strong>
+                        <strong>09:00 – 17:30</strong>
+                    </li>
+                    <li>
+                        <strong> Wednesday: </strong>
+                        <strong>09:00 – 17:30</strong>
+                    </li>
+                    <li>
+                        <strong> Thursday: </strong>
+                        <strong>09:00 – 19:00</strong>
+                    </li>
+                    <li>
+                        <strong> Friday: </strong>
+                        <strong>09:00 – 19:00</strong>
+                    </li>
+                    <li>
+                        <strong> Saturday: </strong>
+                        <strong>10:00 – 17:00</strong>
+                    </li>
+                </ul>
+                <h3 class="h3-responsive poppins mt-4">
+                    Contact us via
+                </h3>
+                <ul class="central-ul">
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:+61456528881" placement="top" mdbTooltip="Mr.Humam Akkad">+61 (456) 528 881 </a>
+                    </li>
+                    <li>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/+61456528881/?text=Welcome%20to%20AKKAD%20WATCHES"
+                            placement="top" mdbTooltip="WhatsApp">+61 (456) 528 881</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-telegram-plane"></i>
+                        <a href="https://t.me/+61456528881" placement="top" mdbTooltip="Telegram">+61 (456) 528 881</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-at"></i>
+                        <a href="mailto:akkadWatches@hotmail.com" placement="top"
+                            mdbTooltip="Click to mail us">akkadWatches@hotmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://www.google.com/maps/uv?pb=!1s0x6ad64526e7322edb%3A0xde97588607297752!3m1!7e115!4s%2Fmaps%2Fplace%2FAkkad%2BWatches%2F%40-37.7380411%2C145.0295205%2C3a%2C75y%2C137.96h%2C90t%2Fdata%3D*213m4*211e1*213m2*211sYuOqK-x5nuHsLROdHBIHFg*212e0*214m2*213m1*211s0x6ad64526e7322edb%3A0xde97588607297752%3Fsa%3DX%26hl%3Den-AU!5sAkkad%20Watches%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e2!2sYuOqK-x5nuHsLROdHBIHFg&hl=en&sa=X&ved=2ahUKEwiWyu3Kp7vxAhWJAxAIHaZ3ADQQpx8wE3oECEAQCA" placement="top"
+                            mdbTooltip="Mersin branch on Google maps" target="_blank">
+                            Australia - Victoria
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-7">
+                <h3 class="h3-responsive poppins">
+                    Leave us a Message
+                </h3>
+                <form class="contact-form mt-4" novalidate [formGroup]="feedbackForm" #fform="ngForm"
+                    (ngSubmit)="onSubmit()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline" color="primary">
+                                <mat-label>Your name</mat-label>
+                                <input matInput formControlName="name" type="text" placeholder="Name & Surname"
+                                    required>
+                                <mat-error *ngIf="formErrors.name">
+                                    {{ formErrors.name }}
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-6">
+                            <mat-form-field appearance="outline" color="primary">
+                                <mat-label>Your Email</mat-label>
+                                <input matInput formControlName="email" type="email" placeholder="Email Address"
+                                    required>
+                                <mat-error *ngIf="formErrors.email">
+                                    {{ formErrors.email }}
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-12">
+                            <mat-form-field appearance="outline" color="primary">
+                                <mat-label>Subject</mat-label>
+                                <input matInput formControlName="subject" type="text"
+                                    placeholder="Subject of your message" required>
+                                <mat-error *ngIf="formErrors.subject">
+                                    {{ formErrors.subject }}
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-12">
+                            <mat-form-field appearance="outline" color="primary">
+                                <mat-label>Your message</mat-label>
+                                <textarea matInput formControlName="message"
+                                    placeholder="Tell us what is your message and let us know your thoughts."
+                                    rows="12"></textarea>
+                                <mat-hint align="end">{{feedbackForm.value.message.length}}/2000</mat-hint>
+                                <mat-error *ngIf="formErrors.message">
+                                    {{ formErrors.message }}
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-round btn-block btn-halloum"
+                            [disabled]="feedbackForm.invalid" mdbWavesEffect type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-8 center">
+            <hr>
+            <h3 class="h3-responsive poppins text-center mt-4">
+                Follow us via <i class="fas fa-share-alt" style="margin-left: 5px;"></i>
+            </h3>
+            <div class="footer-social">
+                <a class="btn-facebook" href="https://www.facebook.com/akkad.watches.3" target="_blank"><i
+                        class="fab fa-facebook-square"></i></a>
+                <a class="btn-instagram" href="https://www.instagram.com/akkad.watches/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn-twitter" href="#" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
